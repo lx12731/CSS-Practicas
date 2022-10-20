@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <style>
+        /* Cascade Style Sheet*/
+        
+        /* Para estilos globales*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Para estilos dentro de una etiqueta*/
+        body{
+            background-color: aqua;
+        }
+
+        p{
+            color: red;
+            text-align: center;
+        }
+
+        /* Para estilos de objetos segun id*/
+        #titulo{
+            color: rgb(200, 150, 220);
+            text-align: right;
+        }
+
+        /* Para estilos de objetos segun clase*/
+        .izquierda{
+            color: green;
+        }
+
+        p.izquierda{
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        .contraste{
+            background-color: black;
+        }
+
+        h1, h2, p{
+            font-weight: bold;
+        }
+
+        .contraste, .izquierda{
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Header Simple</h1>
+    <h2 id="titulo" class="izquierda">Header con id titulo</h2>
+    <p>Párrafo Simple</p>
+
+    <h3 class="izquierda">Prueba clase Header 3</h3>
+    <p class="izquierda">Prueba clases Párrafo</p>
+    <h3 class="izquierda contraste">Prueba multiples clases parrafo</h3>
+</body>
+</html>
